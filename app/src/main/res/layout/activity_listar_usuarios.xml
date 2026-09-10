@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="LISTA DE USUARIOS"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textSize="22sp"
             android:fontFamily="sans-serif-black"
             android:layout_marginStart="12dp" />
@@ -43,7 +43,9 @@
         android:layout_height="wrap_content"
         android:hint="Buscar por nombre o apellido..."
         app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:startIconTint="@color/primary"
         app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/primary"
         app:boxCornerRadiusTopStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
@@ -54,7 +56,9 @@
             android:id="@+id/etBuscadorUsuarios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_muted" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView

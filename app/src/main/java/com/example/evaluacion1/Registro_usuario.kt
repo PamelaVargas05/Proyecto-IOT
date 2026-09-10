@@ -114,11 +114,11 @@ class Registro_usuario : AppCompatActivity() {
             )
             UsuarioRepository.agregarUsuario(nuevoUsuario)
 
-            // Confirmación de éxito y regreso a Login (sin iniciar sesión automática)
+            // Confirmación de éxito con "Entendido"
             SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
                 .setTitleText("¡Registro Exitoso!")
                 .setContentText("El usuario ha sido registrado satisfactoriamente en el sistema.")
-                .setConfirmText("Ir al Login")
+                .setConfirmText("Entendido")
                 .setConfirmClickListener { dialog ->
                     dialog.dismissWithAnimation()
                     finish() // Regresa a la actividad anterior

@@ -29,18 +29,18 @@ object UsuarioRepository {
             Usuario(
                 id = currentId++,
                 nombres = "Pamela",
-                apellidos = "Valenzuela",
-                email = "pame@iot.cl",
+                apellidos = "Vargas",
+                email = "pamela.vargas@inacapmail.cl",
                 clave = "Pame2026!"
             )
         )
         agregarUsuario(
             Usuario(
                 id = currentId++,
-                nombres = "Carlos",
-                apellidos = "González",
-                email = "carlos.g@iot.cl",
-                clave = "Carlos2026!"
+                nombres = "Valentina",
+                apellidos = "Arias",
+                email = "valentina.arias@inacapmail.cl",
+                clave = "Vale2026!"
             )
         )
     }

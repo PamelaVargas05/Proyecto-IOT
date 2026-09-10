@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¡Hola, Administrador!"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/black"
                     android:textSize="22sp"
                     android:fontFamily="sans-serif-black" />
 
@@ -52,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="Salir"
                 android:textColor="@color/color_error"
+                android:textStyle="bold"
                 app:icon="@android:drawable/ic_lock_power_off"
                 app:iconTint="@color/color_error"
                 app:cornerRadius="12dp" />
@@ -99,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Módulos Principales"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:fontFamily="sans-serif-black"
             android:layout_marginBottom="16dp" />
@@ -153,7 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CRUD USUARIO"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="17sp"
                         android:fontFamily="sans-serif-black" />
 
@@ -223,7 +224,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="DATOS SENSOR"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="17sp"
                         android:fontFamily="sans-serif-black" />
 
@@ -293,7 +294,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="DESARROLLADOR"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="17sp"
                         android:fontFamily="sans-serif-black" />
 

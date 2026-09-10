@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Recuperar Contraseña"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textSize="26sp"
             android:fontFamily="sans-serif-black"
             android:layout_marginTop="20dp" />
@@ -77,13 +77,17 @@
                     android:layout_height="wrap_content"
                     android:hint="Correo Electrónico"
                     app:startIconDrawable="@android:drawable/ic_dialog_email"
+                    app:startIconTint="@color/primary"
+                    app:boxStrokeColor="@color/primary"
                     android:layout_marginBottom="24dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etCorreoRecuperar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_muted" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Recover Button -->
@@ -94,6 +98,7 @@
                     android:text="Recuperar"
                     android:textSize="16sp"
                     android:textStyle="bold"
+                    android:textColor="@color/white"
                     app:cornerRadius="14dp"
                     app:backgroundTint="@color/primary" />
             </LinearLayout>

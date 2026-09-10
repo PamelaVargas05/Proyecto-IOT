@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DATOS DE SENSORES"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:fontFamily="sans-serif-black"
                 android:layout_marginStart="12dp" />
@@ -199,7 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Control de Actuadores y Luces"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/black"
             android:textSize="17sp"
             android:fontFamily="sans-serif-black"
             android:layout_marginBottom="14dp" />
@@ -251,7 +251,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Iluminación Principal"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
                         android:fontFamily="sans-serif-black" />
 
@@ -319,7 +319,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Linterna / Foco IoT"
-                        android:textColor="@color/text_primary"
+                        android:textColor="@color/black"
                         android:textSize="16sp"
                         android:fontFamily="sans-serif-black" />
 
@@ -347,9 +347,12 @@
             android:layout_height="56dp"
             android:text="Simular Lectura de Sensores"
             android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             app:cornerRadius="14dp"
             app:backgroundTint="@color/primary"
             app:icon="@android:drawable/ic_popup_sync"
+            app:iconTint="@color/white"
             app:iconGravity="textStart" />
 
     </LinearLayout>

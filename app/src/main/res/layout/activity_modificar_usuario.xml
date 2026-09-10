@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MODIFICAR DATOS"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:fontFamily="sans-serif-black"
                 android:layout_marginStart="12dp" />
@@ -113,13 +113,17 @@
                     android:layout_height="wrap_content"
                     android:hint="Nombres"
                     app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                    app:startIconTint="@color/primary"
+                    app:boxStrokeColor="@color/primary"
                     android:layout_marginBottom="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etModificarNombres"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName|textCapWords" />
+                        android:inputType="textPersonName|textCapWords"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_muted" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Surnames Input -->
@@ -130,13 +134,17 @@
                     android:layout_height="wrap_content"
                     android:hint="Apellidos"
                     app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                    app:startIconTint="@color/primary"
+                    app:boxStrokeColor="@color/primary"
                     android:layout_marginBottom="16dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etModificarApellidos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName|textCapWords" />
+                        android:inputType="textPersonName|textCapWords"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_muted" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Email Input -->
@@ -147,13 +155,17 @@
                     android:layout_height="wrap_content"
                     android:hint="Correo Electrónico"
                     app:startIconDrawable="@android:drawable/ic_dialog_email"
+                    app:startIconTint="@color/primary"
+                    app:boxStrokeColor="@color/primary"
                     android:layout_marginBottom="8dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etModificarEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/text_muted" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -172,6 +184,7 @@
             app:backgroundTint="@color/color_success"
             app:cornerRadius="14dp"
             app:icon="@android:drawable/ic_menu_save"
+            app:iconTint="@color/white"
             app:iconGravity="textStart" />
 
         <!-- Red ELIMINAR Button -->
@@ -187,6 +200,7 @@
             app:backgroundTint="@color/color_error"
             app:cornerRadius="14dp"
             app:icon="@android:drawable/ic_delete"
+            app:iconTint="@color/white"
             app:iconGravity="textStart" />
 
     </LinearLayout>

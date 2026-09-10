@@ -6,7 +6,7 @@
     <!-- IoT Brand Colors -->
     <color name="primary">#1E3A8A</color>
     <color name="primary_variant">#1E40AF</color>
-    <color name="primary_light">#3B82F6</color>
+    <color name="primary_light">#2563EB</color>
     <color name="primary_container">#DBEAFE</color>
     <color name="on_primary_container">#1E3A8A</color>
     
@@ -17,12 +17,12 @@
     <color name="background">#F8FAFC</color>
     <color name="surface">#FFFFFF</color>
     <color name="surface_variant">#F1F5F9</color>
-    <color name="outline">#CBD5E1</color>
-    <color name="outline_light">#E2E8F0</color>
+    <color name="outline">#94A3B8</color>
+    <color name="outline_light">#CBD5E1</color>
     
     <color name="text_primary">#0F172A</color>
-    <color name="text_secondary">#64748B</color>
-    <color name="text_muted">#94A3B8</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#64748B</color>
     
     <!-- Functional / Status Colors -->
     <color name="color_success">#10B981</color>
@@ -34,4 +34,8 @@
     <color name="color_purple">#8B5CF6</color>
     <color name="color_sky">#0284C7</color>
     <color name="color_amber">#D97706</color>
+    
+    <!-- Social Brand Colors -->
+    <color name="color_linkedin">#0A66C2</color>
+    <color name="color_github">#24292E</color>
 </resources>
