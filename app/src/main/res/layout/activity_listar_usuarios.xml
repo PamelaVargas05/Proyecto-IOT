@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="20dp">
+
+    <!-- Top Navigation Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnVolverListar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/text_primary"
+            android:contentDescription="Volver" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LISTA DE USUARIOS"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Real-time Dynamic Search Box -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilBuscador"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar por nombre o apellido..."
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:endIconMode="clear_text"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBuscadorUsuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvContadorUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 usuarios registrados"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- RecyclerView for Users List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+    <!-- Empty State View -->
+    <TextView
+        android:id="@+id/tvListaVacia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="No se encontraron usuarios que coincidan con la búsqueda."
+        android:textColor="@color/text_muted"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</LinearLayout>

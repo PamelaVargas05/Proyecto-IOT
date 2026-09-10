@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Evaluacion1 IoT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Evaluacion1"
+        tools:targetApi="31">
+
+        <!-- 1. Pantalla Splash (Actividad de inicio / LAUNCHER) -->
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Pantalla Login -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- 3. Pantalla Recuperar Contraseña -->
+        <activity
+            android:name=".RecuperarContra"
+            android:exported="false" />
+
+        <!-- 4. Pantalla Crear Contraseña -->
+        <activity
+            android:name=".Crear_Contra"
+            android:exported="false" />
+
+        <!-- 5 y 8. Pantalla Registro de Usuario -->
+        <activity
+            android:name=".Registro_usuario"
+            android:exported="false" />
+
+        <!-- 6. Pantalla Menú Principal -->
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+
+        <!-- 7. Pantalla Menú Gestión de Usuarios -->
+        <activity
+            android:name=".GestionUsuariosActivity"
+            android:exported="false" />
+
+        <!-- 9. Pantalla Listar Usuarios -->
+        <activity
+            android:name=".ListarUsuariosActivity"
+            android:exported="false" />
+
+        <!-- 10. Pantalla Modificar Datos Usuario -->
+        <activity
+            android:name=".ModificarUsuarioActivity"
+            android:exported="false" />
+
+        <!-- 11. Pantalla Datos de Sensores -->
+        <activity
+            android:name=".SensoresActivity"
+            android:exported="false" />
+
+        <!-- 12. Pantalla Datos del Desarrollador(es) -->
+        <activity
+            android:name=".DesarrolladoresActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
